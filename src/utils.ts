@@ -1,4 +1,4 @@
-import fs from 'fs'
+import * as fs from 'fs'
 
 const manipulateUTF8String = (utf8: string): string => {
   try {
