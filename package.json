@@ -15,10 +15,6 @@
     "email": "patrickckabwe@gmail.com",
     "url": "https://www.patrickkabwe.com"
   },
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ],
   "keywords": [
     "base64",
     "convertBase64URlToImage"
