@@ -11,9 +11,8 @@ import { bufferToImageAndWriteImageToPath, convertBase64ToBuffer, readBase64File
  */
 export const converBase64ToImage = (base64: string, path: string): void => {
   try {
-    const base64regex = /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/
-
-    if (!base64regex.test(base64)) {
+    // const base64regex = /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/
+    if (!base64.startsWith(`data:image`)) {
       throw new Error('Invalid base64 string')
     }
     if (!base64) {
