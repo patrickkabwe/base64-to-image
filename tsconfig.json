@@ -5,7 +5,7 @@
     "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
     "skipLibCheck": true,
     "sourceMap": true,
-    "outDir": "./dist",
+    "outDir": ".",
     "moduleResolution": "node",
     "removeComments": true,
     "noImplicitAny": true,
@@ -22,8 +22,6 @@
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "baseUrl": ".",
-    "types": ["node", "jest"],
-    "typeRoots": ["@types"]
   },
   "exclude": ["node_modules"],
 }
