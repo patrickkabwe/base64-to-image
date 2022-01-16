@@ -25,7 +25,8 @@
   ],
   "scripts": {
     "start": "node index.ts",
-    "dev": "nodemon index.ts"
+    "dev": "nodemon index.ts",
+    "build": "npx tsc"
   },
   "devDependencies": {
     "typescript": "^4.5.4",
