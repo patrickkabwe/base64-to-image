@@ -1,24 +1,36 @@
 {
-    "name": "convert-base64-to-image",
-    "description": "This is a node package that helps you to convert base64 string created by javascript file reader to image downloadable file",
-    "maintainers": [
-        {
-            "name": "Patrick",
-            "email": "patrickckabwe@gmail.com"
-        }
-    ],
-    "version": "0.0.3",
-    "main": "index.ts",
-    "license": "MIT",
-    "author": "Patrick",
-    "scripts": {
-        "start": "node index.ts",
-        "dev": "nodemon index.ts"
-    },
-    "devDependencies": {
-        "typescript": "^4.5.4",
-        "@types/node": "^17.0.8",
-        "nodemon": "^2.0.15",
-        "ts-node": "^10.4.0"
+  "name": "convert-base64-to-image",
+  "description": "This is a node package that helps you to convert base64 string created by javascript file reader to image downloadable file",
+  "maintainers": [
+    {
+      "name": "Patrick",
+      "email": "patrickckabwe@gmail.com"
     }
+  ],
+  "version": "0.0.3",
+  "main": "index.ts",
+  "license": "MIT",
+  "author": {
+    "name": "Patrick",
+    "email": "patrickckabwe@gmail.com",
+    "url": "https://www.patrickkabwe.com"
+  },
+  "files": [
+    "index.ts",
+    "@types/index.d.ts"
+  ],
+  "keywords": [
+    "base64",
+    "convertBase64URlToImage"
+  ],
+  "scripts": {
+    "start": "node index.ts",
+    "dev": "nodemon index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "@types/node": "^17.0.8",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0"
+  }
 }
