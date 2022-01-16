@@ -1,4 +1,4 @@
-import { bufferToImageAndWriteImageToPath, convertBase64ToBuffer, readBase64File } from 'src/utils'
+import { bufferToImageAndWriteImageToPath, convertBase64ToBuffer, readBase64File } from './utils'
 
 /**
  * @name converBase64ToImage
