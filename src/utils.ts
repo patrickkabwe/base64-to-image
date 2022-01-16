@@ -39,8 +39,13 @@ export const convertBase64ToBuffer = (base64: string): Buffer => {
 
 export const bufferToImageAndWriteImageToPath = (buffer: Buffer, path: string): void => {
   try {
-    if (!fs.existsSync(path)) {
-      fs.mkdirSync(path, { recursive: true })
+    const fullPath = path.split('/')
+    const fileName = fullPath.at(-1)
+    const dir = fullPath.slice(0, -1).join('/')
+
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true })
+      fs.writeFileSync(`${dir}/${fileName}`, buffer)
     } else {
       fs.writeFileSync(path, buffer)
     }
