@@ -58,7 +58,7 @@ const bufferToImageAndWriteImageToPath = (
  *
  * @returns {void}
  */
-const converBase64ToImage = (base64: Base64, path: string): void => {
+export const converBase64ToImage = (base64: Base64, path: string): void => {
   const base64regex =
     /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/
 
@@ -80,4 +80,3 @@ const converBase64ToImage = (base64: Base64, path: string): void => {
     process.exit(1)
   }
 }
-module.exports = { converBase64ToImage }
