@@ -30,7 +30,8 @@
     "prepublishOnly": "npm run format && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "git:push": "git add -A && git commit -m 'add create dir' && git push"
   },
   "files": [
     "lib/**/*"
