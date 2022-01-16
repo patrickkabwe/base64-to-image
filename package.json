@@ -16,8 +16,7 @@
     "url": "https://www.patrickkabwe.com"
   },
   "files": [
-    "index.ts",
-    "@types/index.d.ts"
+    "index.ts"
   ],
   "keywords": [
     "base64",

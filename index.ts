@@ -1,5 +1,4 @@
-import fs from 'fs'
-import { Base64 } from './@types'
+const fs = require('fs')
 
 const manipulateUTF8String = (utf8: string): string => {
   try {
@@ -52,13 +51,13 @@ const bufferToImageAndWriteImageToPath = (
 /**
  * @name converBase64ToImage
  * @description Takes a base64 string that begins with data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD// and converts it to an image.
- * @param {Base64} base64 Buffer to be converted to image.
+ * @param {string} base64 Buffer to be converted to image.
  * @param {string} path Full path to write image to e.g /path/to/image.png
  * @requires fs
  *
  * @returns {void}
  */
-export const converBase64ToImage = (base64: Base64, path: string): void => {
+export const converBase64ToImage = (base64: string, path: string): void => {
   const base64regex =
     /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/
 
