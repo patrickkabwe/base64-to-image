@@ -11,9 +11,7 @@ const manipulateUTF8String = (utf8: string): string => {
 
 export const readBase64File = (base64: string): string => {
   try {
-    const utf8OrBase64String = base64
-      ? base64
-      : fs.readFileSync('base64String.txt', 'utf8')
+    const utf8OrBase64String = base64 ? base64 : fs.readFileSync('base64String.txt', 'utf8')
     const base64String = manipulateUTF8String(utf8OrBase64String)
     return base64String
   } catch (error) {
@@ -39,10 +37,7 @@ export const convertBase64ToBuffer = (base64: string): Buffer => {
  * @returns {void}
  */
 
-export const bufferToImageAndWriteImageToPath = (
-  buffer: Buffer,
-  path: string
-): void => {
+export const bufferToImageAndWriteImageToPath = (buffer: Buffer, path: string): void => {
   try {
     fs.writeFileSync(path, buffer)
   } catch (error) {

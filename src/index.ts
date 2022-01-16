@@ -1,8 +1,4 @@
-import {
-  bufferToImageAndWriteImageToPath,
-  convertBase64ToBuffer,
-  readBase64File,
-} from 'utils'
+import { bufferToImageAndWriteImageToPath, convertBase64ToBuffer, readBase64File } from 'src/utils'
 
 /**
  * @name converBase64ToImage
@@ -15,8 +11,7 @@ import {
  */
 export const converBase64ToImage = (base64: string, path: string): void => {
   try {
-    const base64regex =
-      /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/
+    const base64regex = /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/
 
     if (!base64regex.test(base64)) {
       throw new Error('Invalid base64 string')
